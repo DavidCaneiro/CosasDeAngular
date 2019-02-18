@@ -1,0 +1,10 @@
+<p>
+  Servicios y accesos asyncronos
+</p>
+<br>
+Cantidad de numeros a generar <input type="text" [(ngModel)]="cantidad">
+
+<button (click)="generarNumerosMal()" > Generar numeros </button>
+{{numeros}} 
+<br>
+<button (click)="generarNumerosObservable()">Generar numeros con observables </button>

@@ -1,0 +1,11 @@
+<p>
+  Datos de tipo raw(angular nos proteje del cross side scripting (xss))
+  Ver en el inspector (F12)
+</p>
+<p>
+  {{4+5}}
+</p>
+<p>
+  {{frasePeligrosa}}
+</p>
+<p [innerHTML]="frasePeligrosa"></p>

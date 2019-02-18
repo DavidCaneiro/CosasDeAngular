@@ -1,0 +1,14 @@
+<p>
+  Trabajo con formularios
+</p>
+
+<form (ngSubmit)="onSubmit()">
+  <label for="nombre">Nombre: </label>
+  <input type="text" name="nombre" [(ngModel)]="nombre">
+<br>
+  <label for="email" >Email: </label>
+  <input type="mail" name="email" [(ngModel)]="mail">
+<br>
+  <input type="submit" value="Enviar">
+  <input type="reset" value="Limpiar">
+</form>

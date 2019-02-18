@@ -1,0 +1,10 @@
+<p>
+  (input)
+  permite comunicarnos entre distintos compoentntes
+
+  En este ejemplo vamos a comunicar el padre con el hiujo enviando desde el padre 
+  un titulo y un color
+</p>
+<h3>Soy el padre</h3>
+<input type="text" [(ngModel)]="color">
+<app-ejemplo12-hijo [colorPadre]="color" [nombrePadre]="'Jose'"> </app-ejemplo12-hijo> 

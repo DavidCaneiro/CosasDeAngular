@@ -1,0 +1,45 @@
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#">Navbar</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Home</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Lista de ejemplos vistos en clase
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a href="#" class="dropdown-item" [routerLink]="['/ejemplo1']">Ejemplo1 (interoplacion)</a> 
+            <a href="#" class="dropdown-item"[routerLink]="['/ejemplo2']">Ejemplo2 (event binding)</a> 
+            <a href="#" class="dropdown-item" [routerLink]="['/ejemplo3']">Ejemplo3 (ngFor)</a> 
+            <a href="#" class="dropdown-item"[routerLink]="['/ejemplo4']">Ejemplo4 (ngIf)</a> 
+            <a href="#" class="dropdown-item" [routerLink]="['/ejemplo5']">Ejemplo5 (twowaydatabinding)</a> 
+            <a href="#" class="dropdown-item"[routerLink]="['/ejemplo6']">Ejemplo6 (property bouds)</a> 
+            <a href="#" class="dropdown-item"[routerLink]="['/ejemplo7']">Ejemplo7 (style,class, atributes bounds)</a> 
+            <a href="#" class="dropdown-item"[routerLink]="['/ejemplo8']">Ejemplo8 (template reference)</a> 
+            <a href="#" class="dropdown-item"[routerLink]="['/ejemplo9']">Ejemplo9 (formularios simples)</a> 
+            <a href="#" class="dropdown-item"[routerLink]="['/ejemplo10']">Ejemplo10 (Pipes)</a> 
+            <a href="#" class="dropdown-item"[routerLink]="['/ejemplo11']">Ejemplo11 (datos tipos raw)</a> 
+            <a href="#" class="dropdown-item" [routerLink]="['/ejemplo12padre']">Ejemplo12-Padre (input)</a> 
+            <a href="#" class="dropdown-item" [routerLink]="['/ejemplo13padre']">Ejemplo13-Padre (output)</a> 
+            <a href="#" class="dropdown-item" [routerLink]="['/ejemplo14']">Ejemplo14 (observables)</a>
+            <a href="#" class="dropdown-item" [routerLink]="['/ejemplo15']">Ejemplo15 (ngIfElse)</a>
+            <a href="#" class="dropdown-item" [routerLink]="['/ejemplo16']">Ejemplo16 (Lazy loading)</a>
+            <a href="#" class="dropdown-item" [routerLink]="['/ejemplo17','1114']">Ejemplo17 (paramentros en rutas)</a>
+            <a href="#" class="dropdown-item" [routerLink]="['/ejemplo18']">Ejemplo18 (formaularios reactivos)</a>
+            <a href="#" class="dropdown-item" [routerLink]="['/ejemplo19']">Ejemplo19 (testing)</a>
+          </div>
+        </li>
+      </ul>
+      <form class="form-inline my-2 my-lg-0">
+        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+      </form>
+    </div>
+  </nav>

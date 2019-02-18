@@ -1,0 +1,11 @@
+<p>
+Condicionales If
+</p>
+El numero vale: {{contador}}
+<button (click)="incrementar()">Incrementar</button>
+<br>
+<!-- contador > 5 se deberia hacer en el controlador, esto es mala practica-->
+<p *ngIf="contador> 5">EL numero vale mas de 5</p>
+
+<p *ngIf="esPrimo()">El numero es primo</p>
+ 

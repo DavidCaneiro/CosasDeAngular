@@ -1,0 +1,16 @@
+<p>
+  Template reference: Podemos hacer referencia a tags del propio DOM
+</p>
+
+<!--numero1: <input [(ngModel)]="num1" type="text">
+<br>
+numero2: <input [(ngModel)]="num2" type="text">
+<br>-->
+numero1: <input #num1 type="text">
+<br>
+numero2: <input #num2 type="text">
+<br>
+El resultado es: {{resultado}}
+<br>
+
+<button (click) = "realizarSuma(num1.value,num2.value)">Sumar</button>
