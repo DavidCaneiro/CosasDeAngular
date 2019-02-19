@@ -10,8 +10,8 @@
 
 -->
 
-
-<input type="text" [(ngModel)]="num1" >
-<input type="text" [(ngModel)]="num2" >
+<h2>Calculadora</h2>
+<input type="text" id="num1" [(ngModel)]="num1" >
+<input type="text" id="num2" [(ngModel)]="num2" >
 <button (click)="dividir()">Dividir </button>
-<div> {{resultado}}</div>
+<div id="resultado">{{resultado}}</div>

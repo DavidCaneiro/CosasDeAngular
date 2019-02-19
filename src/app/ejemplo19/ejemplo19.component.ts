@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { throwError } from 'rxjs';
 
 @Component({
   selector: 'app-ejemplo19',
@@ -16,6 +17,11 @@ export class Ejemplo19Component implements OnInit {
   }
 
   dividir(){
-    this.resultado = this.num1 / this.num2;
+    if(this.num2===0){
+      this.resultado=0
+      throw new Error('No puedes dividir por 0')
+    }else{
+      this.resultado = this.num1 / this.num2;
+    }
   }
 }
